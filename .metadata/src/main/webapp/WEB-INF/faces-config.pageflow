@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pageflow:Pageflow xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14141592409490" configfile="/TP12-WEB-EJB-PC-EPC-E-solution/src/main/webapp/WEB-INF/faces-config.xml"/>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14141592409490" configfile="/Olympics/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="transferForm.xhtml" x="338" y="178" id="pf15468218220860" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" outlinks="pf15468218220871" inlinks="pf15468218220872" path="/transferForm.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="showTransferResult.xhtml" x="554" y="178" id="pf15468218220873" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf15468218220871" path="/showTransferResult.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="welcomeOlympics.xhtml" id="pf15468218220874" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf15468218220872" path="/welcomeOlympics.xhtml"/>
+  <links id="pf15468218220871" target="pf15468218220873" source="pf15468218220860" outcome="#{transferBean.performTransfer}"/>
+  <links id="pf15468218220872" target="pf15468218220860" source="pf15468218220874" outcome="transferForm"/>
+</pageflow:Pageflow>
