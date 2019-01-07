@@ -1,10 +1,10 @@
-E:\HES\Java EE\rootJavaEE\Labs\_Olympics\src\main\java\ch\hevs\bankservice\BankBean.java
-E:\HES\Java EE\rootJavaEE\Labs\_Olympics\src\main\java\ch\hevs\businessobject\Position.java
-E:\HES\Java EE\rootJavaEE\Labs\_Olympics\src\main\java\ch\hevs\businessobject\Category.java
-E:\HES\Java EE\rootJavaEE\Labs\_Olympics\src\main\java\ch\hevs\businessobject\Sport.java
-E:\HES\Java EE\rootJavaEE\Labs\_Olympics\src\main\java\ch\hevs\businessobject\Athlete.java
-E:\HES\Java EE\rootJavaEE\Labs\_Olympics\src\main\java\ch\hevs\businessobject\Account.java
-E:\HES\Java EE\rootJavaEE\Labs\_Olympics\src\main\java\ch\hevs\managedbeans\TransferBean.java
-E:\HES\Java EE\rootJavaEE\Labs\_Olympics\src\main\java\ch\hevs\businessobject\Client.java
-E:\HES\Java EE\rootJavaEE\Labs\_Olympics\src\main\java\ch\hevs\bankservice\Bank.java
-E:\HES\Java EE\rootJavaEE\Labs\_Olympics\src\main\java\ch\hevs\exception\BankException.java
+C:\Users\David\git\Olympics\src\main\java\ch\hevs\bankservice\BankBean.java
+C:\Users\David\git\Olympics\src\main\java\ch\hevs\exception\BankException.java
+C:\Users\David\git\Olympics\src\main\java\ch\hevs\businessobject\Account.java
+C:\Users\David\git\Olympics\src\main\java\ch\hevs\businessobject\Sport.java
+C:\Users\David\git\Olympics\src\main\java\ch\hevs\businessobject\Athlete.java
+C:\Users\David\git\Olympics\src\main\java\ch\hevs\businessobject\Client.java
+C:\Users\David\git\Olympics\src\main\java\ch\hevs\managedbeans\TransferBean.java
+C:\Users\David\git\Olympics\src\main\java\ch\hevs\bankservice\Bank.java
+C:\Users\David\git\Olympics\src\main\java\ch\hevs\businessobject\Position.java
+C:\Users\David\git\Olympics\src\main\java\ch\hevs\businessobject\Category.java
