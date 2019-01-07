@@ -10,11 +10,12 @@
 		
 		<class>ch.hevs.businessobject.Client</class>
 		<class>ch.hevs.businessobject.Account</class>
-		
+		<class>ch.hevs.businessobject.Number</class>
 		<class>ch.hevs.businessobject.Sport</class>
 		<class>ch.hevs.businessobject.Athlete</class>
-		<class>ch.hevs.businessobject.Position</class>
 		<class>ch.hevs.businessobject.Category</class>
+		
+
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 			<property name="hibernate.show_sql" value="true" /> 

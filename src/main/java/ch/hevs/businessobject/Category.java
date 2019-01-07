@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity //give primary key @id
-@Table(name="Sport") //annotation for persistence
+@Table(name="Category") //annotation for persistence
 public class Category {
 	
 	@Id
