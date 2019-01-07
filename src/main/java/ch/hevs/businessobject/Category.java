@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity //give primary key @id
@@ -19,13 +21,22 @@ public class Category {
 	@Column(name="description")
 	private String description;
 	
+	@OneToOne( mappedBy = "category")
+	private Athlete athlete;
+	
+	
+	
+	
 	public Category() {
 		super();
 	}
+	
+	
 	public Category(long id) {
 		super();
 		this.id = id;
 	}
+	
 	public Category(long id, String name, String description) {
 		super();
 		this.id = id;

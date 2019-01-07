@@ -1,10 +1,13 @@
 package ch.hevs.businessobject;
 
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity //give primary key @id
@@ -18,6 +21,36 @@ public class Sport {
 	private String name;
 	@Column(name="description")
 	private String description;
+	
+	
+	
+	
+	@ManyToMany
+	private Set<Athlete> athletes;
+	
+	@ManyToMany		
+	private Set<Number> numbers;
+	
+	
+	public Set<Number> getNumbers(){
+		return numbers;
+	}
+	
+	public void setNumbers(Set<Number> numbers) {
+		this.numbers = numbers;
+	}
+	
+	
+	
+	public Set<Athlete> getAthletes(){
+		return this.athletes;
+	}
+	
+	
+	public void setAthletes(Set<Athlete> athletes) {
+		this.athletes = athletes;
+	}
+	
 	
 	public Sport() {
 		super();

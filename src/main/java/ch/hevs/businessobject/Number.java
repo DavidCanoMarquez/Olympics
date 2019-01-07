@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 	@Entity //give primary key @id
@@ -19,6 +21,10 @@ import javax.persistence.Table;
 	private int number;
 	@Column(name="description")
 	private String description;
+	
+	@ManyToOne
+	@JoinColumn(name = "FK_ATHLETE")
+	private Athlete winner;
 	
 	public Number() {
 		super();
@@ -52,6 +58,15 @@ import javax.persistence.Table;
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	// winner (from Athlete)
+		public Athlete getWinner() {
+			return winner;
+		}
+		public void setWinner(Athlete winner) {
+			this.winner = winner;
+		}
+	
+	
 	@Override
 	public String toString() {
 		return "Sport [id=" + id + ", number=" + number + ", description=" + description + "]";

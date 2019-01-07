@@ -1,10 +1,20 @@
 package ch.hevs.businessobject;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity //give primary key @id
@@ -22,7 +32,31 @@ public class Athlete {
 	private String country;
 	@Column(name="year")
 	private int year;
+	
+	// Number refers to the Positions
 
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "winner", cascade = CascadeType.ALL)
+    private List<Number> numbers;
+	
+	
+	
+	
+	@OneToOne
+	@JoinColumn(name = "category_id")
+	private Category category;
+	
+	
+	@ManyToMany( mappedBy="athletes")
+	private Set<Sport> sports;
+	
+	
+	public Set<Sport> getSports() {
+		return sports;
+		}
+	public void setProjects(Set<Sport> sports) {
+		this.sports = sports;
+		}
+	
 	
 	public Athlete() {
 		super();
@@ -71,6 +105,15 @@ public class Athlete {
 	public void setYear(int year) {
 		this.year = year;
 	}
+	
+	public List<Number> getNumbers(){
+		return numbers;
+	}
+	
+	public void setNumber(List<Number> numbers) {
+		this.numbers = numbers;
+	}
+	
 	@Override
 	public String toString() {
 		return "Athlete [id=" + id + ", lastname=" + lastname + ", firstname=" + firstname + ", country=" + country
