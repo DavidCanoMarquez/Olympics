@@ -7,9 +7,7 @@
 
 	<persistence-unit name="OlympicPU">
 		<jta-data-source>java:/labsDS</jta-data-source>
-		
-		<class>ch.hevs.businessobject.Client</class>
-		<class>ch.hevs.businessobject.Account</class>
+
 		<class>ch.hevs.businessobject.Number</class>
 		<class>ch.hevs.businessobject.Sport</class>
 		<class>ch.hevs.businessobject.Athlete</class>
