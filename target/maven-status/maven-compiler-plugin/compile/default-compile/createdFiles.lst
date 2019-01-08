@@ -1,9 +1,12 @@
 ch\hevs\businessobject\Number.class
 ch\hevs\exception\BankException.class
+ch\hevs\bankservice\OlympicBean.class
 ch\hevs\businessobject\Account.class
 ch\hevs\businessobject\Athlete.class
 ch\hevs\bankservice\Bank.class
 ch\hevs\businessobject\Client.class
+ch\hevs\managedbeans\RegistryBean.class
+ch\hevs\bankservice\Olympic.class
 ch\hevs\businessobject\Sport.class
 ch\hevs\managedbeans\TransferBean.class
 ch\hevs\bankservice\BankBean.class
