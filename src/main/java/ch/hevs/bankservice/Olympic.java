@@ -6,21 +6,22 @@ import javax.ejb.Local;
 
 
 import ch.hevs.businessobject.*;
+import ch.hevs.businessobject.Sport;
 
 @Local
 public interface Olympic {
 
-	Account getAccount(String accountDescription, String lastnameOwner);
-	//Sport getSport(String sportname, String sportDescription);
-	
-	public List<Account> getAccountListFromClientLastname(String lastname);
-	public List<Sport> getSportListFromAthleteLastname(String lastname);
-
-	void transfer(Account compteSrc, Account compteDest, int montant) throws Exception;
-
-	List<Client> getClients();
 	List<Sport> getSports();
 
-	Client getClient(long clientid);
+	//Account getAccount(String accountDescription, String lastnameOwner);
+	
+	public List<Sport> getSportListFromName(String name);
+
+	//void transfer(Account compteSrc, Account compteDest, int montant) throws Exception;
+
+	//List<Client> getClients();
+
 	Sport getSport(long id);
+
+	
 }

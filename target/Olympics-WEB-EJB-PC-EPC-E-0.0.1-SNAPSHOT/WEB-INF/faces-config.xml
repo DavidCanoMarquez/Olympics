@@ -12,18 +12,19 @@
 	<navigation-rule>
 		<display-name>welcomeOlympics.xhtml</display-name>
 		<from-view-id>/welcomeOlympics.xhtml</from-view-id>
+		
 		<navigation-case>
-			<from-outcome>transferForm</from-outcome>
-			<to-view-id>/transferForm.xhtml</to-view-id>
+			<from-outcome>listSports</from-outcome>
+			<to-view-id>/listSports.xhtml</to-view-id>
 		</navigation-case>
+		
 	</navigation-rule>
-	<navigation-rule>
-		<display-name>transferForm.xhtml</display-name>
-		<from-view-id>/transferForm.xhtml</from-view-id>
-		<navigation-case>
-			<from-outcome>#{transferBean.performTransfer}</from-outcome>
-			<to-view-id>/showTransferResult.xhtml</to-view-id>
-		</navigation-case>
-	</navigation-rule>
+	
+	
+	
+	
+	
+	
+	
 
 </faces-config>
